@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden; /* 防止滚动条出现 */
+        }
+        
+        .container {
+            position: relative;
+            width: 1200px;  /* 进一步扩大 */
+            height: 800px;  /* 进一步扩大 */
+        }
+        
+        .center-icon {
+            position: absolute;
+            width: 400px;   /* 显著扩大 */
+            height: 400px;  /* 显著扩大 */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: aquamarine;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 48px; /* 显著增大 */
+            box-shadow: 0 0 40px rgba(0.4, 0.3, 0.1, 0.2); /* 阴影更大 */
+            z-index: 10;
+        }
+        
+        .knowledge-point {
+            position: absolute;
+            width: 350px;   /* 显著扩大 */
+            background-color: skyblue;
+            border-radius: 15px; /* 圆角更大 */
+            padding: 30px;  /* 内边距更大 */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* 阴影更大 */
+            z-index: 5;
+        }
+        
+        .point-1 {
+            top: 100px;     /* 位置调整 */
+            left: 100px;
+        }
+        
+        .point-2 {
+            top: 100px;
+            right: 10px;
+        }
+        
+        .point-3 {
+            bottom: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .knowledge-point h3 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 3px solid #eee; /* 边框更粗 */
+            padding-bottom: 15px; /* 间距更大 */
+            font-size: 32px; /* 标题更大 */
+        }
+        
+        .knowledge-point ul {
+            padding-left: 40px; /* 缩进更大 */
+            margin-top: 20px;   /* 增加上边距 */
+        }
+        
+        .knowledge-point li {
+            margin-bottom: 15px; /* 间距更大 */
+            color: #666;
+            font-size: 24px; /* 文字更大 */
+            line-height: 1.8; /* 行高更大 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center-icon">HTML和CSS</div>
+        
+        <div class="knowledge-point point-1">
+            <h3>CSS</h3>
+            <ul>
+                <li>CSS3选择器</li>
+                <li>CSS3样式</li>
+                <li>CSS3盒模型</li>
+                <li>CSS3动画</li>
+            </ul>
+        </div>
+        
+        <div class="knowledge-point point-2">
+            <h3>JS</h3>
+            <ul>
+                <li>数据类型</li>
+                <li>运算符</li>
+                <li>基础语法</li>
+                <li>JS特效</li>
+            </ul>
+        </div>
+        
+        <div class="knowledge-point point-3">
+            <h3>HTML基础</h3>
+            <ul>
+                <li>标签与属性</li>
+                <li>多媒体</li>
+                <li>图像标签</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
